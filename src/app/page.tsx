@@ -1,23 +1,25 @@
 import Image from "next/image";
-import CustomLink from "@/components/customlink";
+import Link from "next/link";
 
+const downloadCVLink = "/curriculo.pdf";
 const emailContactLink = "mailto:eupedrohenrique.euzebio@gmail.com";
 
 function ContactLinks() {
   return (
     <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
-      <CustomLink
-        href=""
+      <a
+        href={downloadCVLink}
+        download
         className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium transition-all hover:bg-indigo-500/50 md:px-8"
       >
         Download CV
-      </CustomLink>
-      <CustomLink
+      </a>
+      <Link
         href={emailContactLink}
         className="flex w-full max-w-xs items-center justify-center rounded-full border-2 border-indigo-500 bg-background px-4 py-2 font-medium transition-all hover:bg-indigo-500 md:px-8"
       >
         Entrar em contato
-      </CustomLink>
+      </Link>
     </div>
   );
 }
