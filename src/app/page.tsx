@@ -126,10 +126,10 @@ function TechnologiesSection() {
             <Image
               src={tech.icon}
               alt={tech.name}
-              width={0}
-              height={0}
+              width={50}
+              height={50}
               sizes="100vw"
-              className="w-10"
+              className="tech-icon w-10"
             />
           </div>
         ))}
@@ -151,10 +151,10 @@ function TechnologiesSection() {
             <Image
               src={tech.icon}
               alt={tech.name}
-              width={0}
-              height={0}
+              width={50}
+              height={50}
               sizes="100vw"
-              className="w-10"
+              className="tech-icon w-10"
             />
           </div>
         ))}
@@ -176,10 +176,10 @@ function TechnologiesSection() {
             <Image
               src={database.icon}
               alt={database.name}
-              width={0}
-              height={0}
+              width={50}
+              height={50}
               sizes="100vw"
-              className="w-10"
+              className="tech-icon w-10"
             />
           </div>
         ))}
