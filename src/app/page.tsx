@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,8 +35,8 @@ function IntroductionSection() {
       <span className="text-3xl font-semibold text-indigo-500 md:text-4xl">
         Pedro Henrique
       </span>
-      <p className="font-sans text-lg font-medium text-muted-foreground md:text-xl">
-        Seja bem-vindo ao meu portfólio
+      <p className="text-lg font-medium text-muted-foreground md:text-xl">
+        Seja bem-vindo ao meu portifólio
       </p>
       <ContactLinks />
     </div>
@@ -315,7 +317,7 @@ function ProjectsSection() {
             </div>
           </div>
         </div>
-        <div className="mb-10">
+        <div>
           <div className="flex flex-col gap-3 md:flex-row">
             <Image
               src="/apresentation-fsw-store.png"
@@ -380,6 +382,89 @@ function ProjectsSection() {
   );
 }
 
+function ContactSection() {
+  return (
+    <div>
+      <h2 className="mb-4 text-center text-3xl font-medium md:text-4xl">
+        Contato
+      </h2>
+
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <Link
+          href={emailContactLink}
+          className="flex flex-col items-center justify-center gap-1"
+        >
+          <Button className="rounded-full bg-accent text-indigo-500 hover:bg-accent hover:text-indigo-500">
+            <Mail className="h-5 w-5" />
+          </Button>
+
+          <h3 className="text-base font-medium">E-mail</h3>
+
+          <p className="text-[0.625rem] font-medium text-muted-foreground md:text-xs">
+            pedroeuzebiodev@gmail.com
+          </p>
+        </Link>
+        <Link
+          href="tel:+5585996378165"
+          className="flex flex-col items-center justify-center gap-1"
+        >
+          <Button className="rounded-full bg-accent text-indigo-500 hover:bg-accent hover:text-indigo-500">
+            <Phone className="h-5 w-5" />
+          </Button>
+
+          <h3 className="text-base font-medium">Telefone</h3>
+
+          <p className="text-[0.625rem] font-medium text-muted-foreground md:text-xs">
+            (85) 99637-8165
+          </p>
+        </Link>
+        <Link
+          href="https://linkedin.com/in/pedro-henrique-lp142830"
+          className="flex flex-col items-center justify-center gap-1"
+        >
+          <Button className="rounded-full bg-accent text-indigo-500 hover:bg-accent hover:text-indigo-500">
+            <Linkedin className="h-5 w-5" />
+          </Button>
+
+          <h3 className="text-base font-medium">Linkedin</h3>
+
+          <p className="text-[0.625rem] font-medium text-muted-foreground md:text-xs">
+            @pedro-henrique-lp142830
+          </p>
+        </Link>
+        <Link
+          href="https://gitub.com/eupedrohenrique"
+          className="flex flex-col items-center justify-center gap-1"
+        >
+          <Button className="rounded-full bg-accent text-indigo-500 hover:bg-accent hover:text-indigo-500">
+            <Github className="h-5 w-5" />
+          </Button>
+
+          <h3 className="text-base font-medium">Github</h3>
+
+          <p className="text-[0.625rem] font-medium text-muted-foreground md:text-xs">
+            @eupedrohenrique
+          </p>
+        </Link>
+        <Link
+          href="https://instagram.com/phwebcipher"
+          className="flex flex-col items-center justify-center gap-1"
+        >
+          <Button className="rounded-full bg-accent text-indigo-500 hover:bg-accent hover:text-indigo-500">
+            <Instagram className="h-5 w-5" />
+          </Button>
+
+          <h3 className="text-base font-medium">Instagram</h3>
+
+          <p className="text-[0.625rem] font-medium text-muted-foreground md:text-xs">
+            @phwebcipher
+          </p>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="p-5">
@@ -405,6 +490,10 @@ export default function Home() {
 
       <section className="mt-10">
         <ProjectsSection />
+      </section>
+
+      <section className="mt-10">
+        <ContactSection />
       </section>
     </main>
   );
