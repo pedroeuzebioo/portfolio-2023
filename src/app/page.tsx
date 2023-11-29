@@ -1,7 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const downloadCVLink = "./curriculo.pdf";
 const emailContactLink = "mailto:eupedrohenrique.euzebio@gmail.com";
+
+function ContactLinks() {
+  return (
+    <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
+      <Link
+        href={downloadCVLink}
+        passHref
+        download
+        className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium transition-all hover:bg-indigo-500/50 md:px-8"
+      >
+        Download CV
+      </Link>
+      <Link
+        href={emailContactLink}
+        passHref
+        className="flex w-full max-w-xs items-center justify-center rounded-full border-2 border-indigo-500 bg-background px-4 py-2 font-medium transition-all hover:bg-indigo-500 md:px-8"
+      >
+        Entrar em contato
+      </Link>
+    </div>
+  );
+}
 
 function IntroductionSection() {
   return (
@@ -13,21 +36,7 @@ function IntroductionSection() {
       <p className="font-sans text-lg font-medium text-muted-foreground md:text-xl">
         Seja bem-vindo ao meu portfólio
       </p>
-      <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
-        <a
-          className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium transition-all hover:bg-indigo-500/50 md:px-8"
-          href={downloadCVLink}
-          download
-        >
-          Download CV
-        </a>
-        <a
-          href={emailContactLink}
-          className="flex w-full max-w-xs items-center justify-center rounded-full border-2 border-indigo-500 bg-background px-4 py-2 font-medium transition-all hover:bg-indigo-500 md:px-8"
-        >
-          Entrar em contato
-        </a>
-      </div>
+      <ContactLinks />
     </div>
   );
 }
@@ -68,9 +77,122 @@ function AboutMeSection() {
   );
 }
 
+function TechnologiesSection() {
+  const technologiesFrontEnd = [
+    { name: "HTML", icon: "/html5-original.svg" },
+    { name: "CSS", icon: "/css3-original.svg" },
+    { name: "JavaScript", icon: "/javascript-original.svg" },
+    { name: "TypeScript", icon: "/typescript-original.svg" },
+    { name: "React", icon: "/react-original.svg" },
+    { name: "Next.js", icon: "/nextjs-original.svg" },
+    { name: "Tailwind", icon: "/tailwindcss-plain.svg" },
+    { name: "Shadcn/UI", icon: "/shadcn.png" },
+    { name: "CSS-in-JS", icon: "/css-in-js.png" },
+    { name: "Bootstrap", icon: "/bootstrap-original.svg" },
+    { name: "SASS", icon: "/sass-original.svg" },
+  ];
+
+  const technologiesBackEnd = [
+    { name: "PHP", icon: "/php-original.svg" },
+    { name: "Java", icon: "/java-original.svg" },
+    { name: "Node.js", icon: "/nodejs-original.svg" },
+    { name: "Spring", icon: "/spring-original.svg" },
+    { name: "Prisma", icon: "/prisma.png" },
+  ];
+
+  const databases = [
+    { name: "MySQL", icon: "/mysql-original.svg" },
+    { name: "PostgreSQL", icon: "/postgresql-original.svg" },
+    { name: "SQLite", icon: "/sqlite-original.svg" },
+  ];
+
+  return (
+    <div>
+      <h2 className="mb-4 text-center text-3xl font-medium md:text-4xl">
+        Tecnologias
+      </h2>
+
+      <h3 className="mb-4 text-center text-2xl font-medium md:text-3xl">
+        Front-end
+      </h3>
+
+      <div className="mb-4 flex flex-wrap items-center justify-center gap-10">
+        {technologiesFrontEnd.map((tech) => (
+          <div
+            key={tech.name}
+            className="border-text flex h-32 w-32 flex-col items-center justify-center rounded-t border-b-4 bg-indigo-800 p-4"
+          >
+            <p className="mb-2 text-justify text-lg font-medium md:text-xl">
+              {tech.name}
+            </p>
+            <Image
+              src={tech.icon}
+              alt={tech.name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-10"
+            />
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mb-4 text-center text-2xl font-medium md:text-3xl">
+        Back-end
+      </h3>
+
+      <div className="mb-4 flex flex-wrap items-center justify-center gap-10">
+        {technologiesBackEnd.map((tech) => (
+          <div
+            key={tech.name}
+            className="border-text flex h-32 w-32 flex-col items-center justify-center rounded-t border-b-4 bg-indigo-800 p-4"
+          >
+            <p className="mb-2 text-justify text-lg font-medium md:text-xl">
+              {tech.name}
+            </p>
+            <Image
+              src={tech.icon}
+              alt={tech.name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-10"
+            />
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mb-4 text-center text-2xl font-medium md:text-3xl">
+        Banco de dados
+      </h3>
+
+      <div className="flex flex-wrap items-center justify-center gap-10">
+        {databases.map((database) => (
+          <div
+            key={database.name}
+            className="border-text flex h-32 w-32 flex-col items-center justify-center rounded-t border-b-4 bg-indigo-800 p-4"
+          >
+            <p className="mb-2 text-justify text-lg font-medium md:text-xl">
+              {database.name}
+            </p>
+            <Image
+              src={database.icon}
+              alt={database.name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-10"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
-    <main className="p-10">
+    <main className="p-5">
       <section className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
         <IntroductionSection />
         <div>
@@ -85,6 +207,10 @@ export default function Home() {
 
       <section className="mt-10">
         <AboutMeSection />
+      </section>
+
+      <section className="mt-10">
+        <TechnologiesSection />
       </section>
     </main>
   );
