@@ -1,16 +1,15 @@
+"use client";
+
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
   return (
     <Card className="flex items-center justify-between p-[1.875rem]">
-      <Link href="/">
-        <h1 className="text-2xl font-semibold">Pedro Henrique</h1>
-      </Link>
-
       <Sheet>
         <SheetTrigger asChild>
           <Button size="icon" variant="outline">
@@ -24,6 +23,10 @@ const Header = () => {
           </SheetHeader>
 
           <div className="mt-2 flex flex-col gap-3">
+            <Button className="w-full justify-start gap-2" variant="outline">
+              Inicío
+            </Button>
+
             <Button className="w-full justify-start gap-2" variant="outline">
               Sobre mim
             </Button>
@@ -42,6 +45,12 @@ const Header = () => {
           </div>
         </SheetContent>
       </Sheet>
+
+      <Link href="/">
+        <h1 className="text-2xl font-semibold">Pedro Henrique</h1>
+      </Link>
+
+      <ModeToggle />
     </Card>
   );
 };

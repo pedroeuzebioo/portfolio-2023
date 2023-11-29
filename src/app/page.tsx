@@ -11,7 +11,7 @@ function ContactLinks() {
       <a
         href={downloadCVLink}
         download
-        className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium transition-all hover:bg-indigo-500/50 md:px-8"
+        className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium md:px-8"
       >
         Download CV
       </a>
@@ -41,7 +41,7 @@ function IntroductionSection() {
   );
 }
 
-// componente renderiza a seção de introdução na página inicial
+// componente renderiza a seção de sobre mim na página inicial
 function AboutMeSection() {
   return (
     <div>
@@ -78,6 +78,7 @@ function AboutMeSection() {
   );
 }
 
+// componente renderiza a seção de tecnologias na página inicial
 function TechnologiesSection() {
   const technologiesFrontEnd = [
     { name: "HTML", icon: "/html5-original.svg" },
@@ -244,16 +245,16 @@ function ProjectsSection() {
                 <li>API do WhatsApp</li>
               </ul>
 
-              <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
+              <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
                 <Link
                   href="https://github.com/eupedrohenrique/speedy-hamburguer"
-                  className="flex w-full items-center justify-center rounded bg-indigo-800 px-2 py-2 font-medium transition-all md:max-w-[200px]"
+                  className="flex w-full items-center justify-center rounded bg-indigo-500 px-2 py-2 font-medium text-primary transition-all md:max-w-[200px]"
                 >
                   Acessar repositório
                 </Link>
                 <Link
                   href="https://speedyhamburguer.vercel.app"
-                  className="flex w-full items-center justify-center rounded bg-indigo-800 px-2 py-2 font-medium transition-all md:max-w-[200px]"
+                  className="flex w-full items-center  justify-center rounded bg-indigo-500 px-2 py-2 font-medium text-primary transition-all md:max-w-[200px]"
                 >
                   Acessar projeto
                 </Link>
@@ -303,10 +304,10 @@ function ProjectsSection() {
                 <li>SQLite</li>
               </ul>
 
-              <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
+              <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
                 <Link
                   href="https://github.com/eupedrohenrique/upload-ai"
-                  className="flex w-full items-center justify-center rounded bg-indigo-800 px-2 py-2 font-medium transition-all md:max-w-[200px]"
+                  className="flex w-full items-center justify-center rounded bg-indigo-500 px-2 py-2 font-medium text-primary transition-all md:max-w-[200px]"
                 >
                   Acessar repositório
                 </Link>
@@ -357,16 +358,16 @@ function ProjectsSection() {
                 <li>Stripe</li>
               </ul>
 
-              <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
+              <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
                 <Link
                   href="https://github.com/eupedrohenrique/fsw-store"
-                  className="flex w-full items-center justify-center rounded bg-indigo-800 px-2 py-2 font-medium transition-all md:max-w-[200px]"
+                  className="flex w-full items-center justify-center rounded bg-indigo-500 px-2 py-2 font-medium text-primary transition-all md:max-w-[200px]"
                 >
                   Acessar repositório
                 </Link>
                 <Link
                   href="https://fsw-store-pedrohenrique.vercel.app"
-                  className="flex w-full items-center justify-center rounded bg-indigo-800 px-2 py-2 font-medium transition-all md:max-w-[200px]"
+                  className="flex w-full items-center justify-center rounded bg-indigo-500 px-2 py-2 font-medium text-primary transition-all md:max-w-[200px]"
                 >
                   Acessar projeto
                 </Link>
