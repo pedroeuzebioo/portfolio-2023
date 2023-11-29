@@ -4,6 +4,7 @@ import Link from "next/link";
 const downloadCVLink = "/curriculo.pdf";
 const emailContactLink = "mailto:eupedrohenrique.euzebio@gmail.com";
 
+// componente renderiza a seção de links de contatos na página inicial
 function ContactLinks() {
   return (
     <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
@@ -24,6 +25,7 @@ function ContactLinks() {
   );
 }
 
+// componente renderiza a seção de introdução na página inicial
 function IntroductionSection() {
   return (
     <div className="text-center md:text-left">
@@ -39,6 +41,7 @@ function IntroductionSection() {
   );
 }
 
+// componente renderiza a seção de introdução na página inicial
 function AboutMeSection() {
   return (
     <div>
