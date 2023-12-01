@@ -3,7 +3,13 @@
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from "./ui/sheet";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 
@@ -17,37 +23,72 @@ const Header = () => {
           </Button>
         </SheetTrigger>
 
-        <SheetContent side="right">
+        <SheetContent side="left">
           <SheetHeader className="text-left text-lg font-semibold">
             Menu
           </SheetHeader>
 
           <div className="mt-2 flex flex-col gap-3">
-            <Button className="w-full justify-start gap-2" variant="outline">
-              Inicío
-            </Button>
+            <SheetClose asChild>
+              <Link href="/">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  Início
+                </Button>
+              </Link>
+            </SheetClose>
 
-            <Button className="w-full justify-start gap-2" variant="outline">
-              Sobre mim
-            </Button>
+            <SheetClose asChild>
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  Sobre mim
+                </Button>
+              </Link>
+            </SheetClose>
 
-            <Button className="w-full justify-start gap-2" variant="outline">
-              Tecnologias
-            </Button>
+            <SheetClose asChild>
+              <Link href="/technologies">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  Tecnologias
+                </Button>
+              </Link>
+            </SheetClose>
 
-            <Button className="w-full justify-start gap-2" variant="outline">
-              Projetos
-            </Button>
+            <SheetClose asChild>
+              <Link href="/projects">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  Projetos
+                </Button>
+              </Link>
+            </SheetClose>
 
-            <Button className="w-full justify-start gap-2" variant="outline">
-              Contato
-            </Button>
+            <SheetClose asChild>
+              <Link href="/contact">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  Contato
+                </Button>
+              </Link>
+            </SheetClose>
           </div>
         </SheetContent>
       </Sheet>
 
       <Link href="/">
-        <h1 className="text-2xl font-semibold">Pedro Henrique</h1>
+        <h1 className="text-3xl font-semibold md:text-4xl">Pedro Henrique</h1>
       </Link>
 
       <ModeToggle />
