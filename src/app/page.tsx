@@ -20,7 +20,7 @@ const ContactLinks = () => {
   return (
     <div className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start">
       <a
-        href="./curriculo.pdf"
+        href="/curriculo.pdf"
         download
         className="flex w-full max-w-xs items-center justify-center rounded-full bg-indigo-500 px-4 py-2 font-medium md:px-8"
       >
