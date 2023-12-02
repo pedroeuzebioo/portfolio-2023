@@ -9,7 +9,7 @@ const IntroductionSection = () => {
         Pedro Henrique
       </span>
       <p className="text-lg font-medium text-muted-foreground md:text-xl">
-        Seja bem-vindo ao meu portifólio
+        Seja bem-vindo ao meu portfólio
       </p>
       <ContactLinks />
     </div>
