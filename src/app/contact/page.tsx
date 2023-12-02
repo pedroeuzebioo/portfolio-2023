@@ -9,7 +9,7 @@ export default function ContactSection() {
         Contato
       </h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="m-auto flex max-w-[350px] flex-wrap items-center justify-center gap-10 md:max-w-full">
         <Link
           href="https://gitub.com/eupedrohenrique"
           className="flex flex-1 flex-col items-center justify-center gap-1"
@@ -20,7 +20,7 @@ export default function ContactSection() {
 
           <h3 className="text-base font-medium">Github</h3>
 
-          <p className="text-[0.575rem] font-medium text-muted-foreground md:text-xs">
+          <p className="text-[0.500rem] font-medium text-muted-foreground md:text-xs">
             @eupedrohenrique
           </p>
         </Link>
@@ -35,7 +35,7 @@ export default function ContactSection() {
 
           <h3 className="text-base font-medium">LinkedIn</h3>
 
-          <p className="text-[0.575rem] font-medium text-muted-foreground md:text-xs">
+          <p className="text-[0.500rem] font-medium text-muted-foreground md:text-xs">
             @pedro-henrique-lp142830
           </p>
         </Link>
@@ -50,7 +50,7 @@ export default function ContactSection() {
 
           <h3 className="text-base font-medium">E-mail</h3>
 
-          <p className="text-[0.575rem] font-medium text-muted-foreground md:text-xs">
+          <p className="text-[0.500rem] font-medium text-muted-foreground md:text-xs">
             eupedrohenrique.euzebio@gmail.com
           </p>
         </Link>
@@ -65,7 +65,7 @@ export default function ContactSection() {
 
           <h3 className="text-base font-medium">Telefone</h3>
 
-          <p className="text-[0.575rem] font-medium text-muted-foreground md:text-xs">
+          <p className="text-[0.500rem] font-medium text-muted-foreground md:text-xs">
             (85) 99637-8165
           </p>
         </Link>
@@ -80,7 +80,7 @@ export default function ContactSection() {
 
           <h3 className="text-base font-medium">Instagram</h3>
 
-          <p className="text-[0.575rem] font-medium text-muted-foreground md:text-xs">
+          <p className="text-[0.500rem] font-medium text-muted-foreground md:text-xs">
             @phwebcipher
           </p>
         </Link>
