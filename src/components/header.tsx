@@ -11,88 +11,72 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import Link from "next/link";
-import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
   return (
-    <Card className="flex items-center justify-between p-[1.875rem]">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button size="icon" variant="outline">
-            <MenuIcon />
-          </Button>
-        </SheetTrigger>
+    <header>
+      <Card className="flex max-w-7xl items-center justify-between p-[1.875rem]">
+        <Link href="/">
+          <h1 className="text-3xl font-semibold">Pedro Euzebio</h1>
+        </Link>
 
-        <SheetContent side="left">
-          <SheetHeader className="text-left text-lg font-semibold">
-            Menu
-          </SheetHeader>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button size="icon" variant="outline">
+              <MenuIcon />
+            </Button>
+          </SheetTrigger>
 
-          <div className="mt-2 flex flex-col gap-3">
-            <SheetClose asChild>
-              <Link href="/">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  Início
-                </Button>
-              </Link>
-            </SheetClose>
+          <SheetContent side="right">
+            <SheetHeader className="text-left text-lg font-semibold">
+              Menu
+            </SheetHeader>
 
-            <SheetClose asChild>
-              <Link href="/about">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  Sobre mim
-                </Button>
-              </Link>
-            </SheetClose>
+            <div className="mt-2 flex flex-col gap-3">
+              <SheetClose asChild>
+                <Link href="/">
+                  <Button variant="outline" className="w-full justify-start">
+                    Início
+                  </Button>
+                </Link>
+              </SheetClose>
 
-            <SheetClose asChild>
-              <Link href="/technologies">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  Tecnologias
-                </Button>
-              </Link>
-            </SheetClose>
+              <SheetClose asChild>
+                <Link href="/about">
+                  <Button variant="outline" className="w-full justify-start">
+                    Sobre mim
+                  </Button>
+                </Link>
+              </SheetClose>
 
-            <SheetClose asChild>
-              <Link href="/projects">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  Projetos
-                </Button>
-              </Link>
-            </SheetClose>
+              <SheetClose asChild>
+                <Link href="/technologies">
+                  <Button variant="outline" className="w-full justify-start">
+                    Tecnologias
+                  </Button>
+                </Link>
+              </SheetClose>
 
-            <SheetClose asChild>
-              <Link href="/contact">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  Contato
-                </Button>
-              </Link>
-            </SheetClose>
-          </div>
-        </SheetContent>
-      </Sheet>
+              <SheetClose asChild>
+                <Link href="/projects">
+                  <Button variant="outline" className="w-full justify-start">
+                    Projetos
+                  </Button>
+                </Link>
+              </SheetClose>
 
-      <Link href="/">
-        <h1 className="text-3xl font-semibold md:text-4xl">Pedro Henrique</h1>
-      </Link>
-
-      <ModeToggle />
-    </Card>
+              <SheetClose asChild>
+                <Link href="/contact">
+                  <Button variant="outline" className="w-full justify-start">
+                    Contato
+                  </Button>
+                </Link>
+              </SheetClose>
+            </div>
+          </SheetContent>
+        </Sheet>
+      </Card>
+    </header>
   );
 };
 
