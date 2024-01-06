@@ -42,7 +42,7 @@ const ContactLinks = () => {
 
 export default function Home() {
   return (
-    <main className="m-auto flex w-full max-w-5xl flex-col gap-12 p-[1.875rem]">
+    <main className="m-auto flex w-full max-w-7xl flex-col gap-12 p-[1.875rem]">
       <section className="flex flex-1 flex-col items-center justify-center gap-4 md:min-h-[50vh] md:flex-row md:items-start md:justify-between">
         <Introduction />
         <Image
