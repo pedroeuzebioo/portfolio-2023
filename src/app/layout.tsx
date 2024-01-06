@@ -34,11 +34,9 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <div className="flex h-screen flex-col">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

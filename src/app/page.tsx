@@ -1,3 +1,7 @@
+import About from "@/components/about";
+import Contact from "@/components/contact";
+import Projects from "@/components/projects";
+import Technologies from "@/components/technologies";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -38,8 +42,8 @@ const ContactLinks = () => {
 
 export default function Home() {
   return (
-    <main className="m-auto w-full max-w-7xl flex-1 p-[1.875rem]">
-      <section className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
+    <main className="m-auto flex w-full max-w-5xl flex-col gap-12 p-[1.875rem]">
+      <section className="flex flex-1 flex-col items-center justify-center gap-4 md:min-h-[50vh] md:flex-row md:items-start md:justify-between">
         <Introduction />
         <Image
           src="/avatar.png"
@@ -48,6 +52,14 @@ export default function Home() {
           height={200}
         />
       </section>
+
+      <About />
+
+      <Technologies />
+
+      <Projects />
+
+      <Contact />
     </main>
   );
 }
