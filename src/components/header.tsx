@@ -12,8 +12,8 @@ import { Card } from "./ui/card";
 
 const Header = () => {
   return (
-    <Card className="w-[100vw]">
-      <div className="m-auto flex max-w-5xl items-center justify-center p-[1.875rem] md:justify-between">
+    <Card className="w-full">
+      <div className="m-auto flex max-w-screen-xl items-center justify-center p-[1.875rem] md:justify-between">
         <Link href="#home">
           <h1 className="text-3xl font-semibold" id="home">
             Pedro Euzebio
