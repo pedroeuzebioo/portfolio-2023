@@ -1,82 +1,62 @@
 "use client";
 
-import { MenuIcon } from "lucide-react";
-import { Button } from "./ui/button";
-import { Card } from "./ui/card";
 import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from "./ui/sheet";
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "@/components/ui/navegation-menu";
+import { navigationMenuTriggerStyle } from "@/components/ui/navegation-menu";
 import Link from "next/link";
+import { Card } from "./ui/card";
 
 const Header = () => {
   return (
-    <header>
-      <Card className="flex max-w-7xl items-center justify-between p-[1.875rem]">
-        <Link href="/">
-          <h1 className="text-3xl font-semibold">Pedro Euzebio</h1>
+    <Card className="w-[100vw]">
+      <div className="m-auto flex max-w-5xl items-center justify-center p-[1.875rem] md:justify-between">
+        <Link href="#home">
+          <h1 className="text-3xl font-semibold" id="home">
+            Pedro Euzebio
+          </h1>
         </Link>
 
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button size="icon" variant="outline">
-              <MenuIcon />
-            </Button>
-          </SheetTrigger>
-
-          <SheetContent side="right">
-            <SheetHeader className="text-left text-lg font-semibold">
-              Menu
-            </SheetHeader>
-
-            <div className="mt-2 flex flex-col gap-3">
-              <SheetClose asChild>
-                <Link href="/">
-                  <Button variant="outline" className="w-full justify-start">
-                    Início
-                  </Button>
-                </Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="/about">
-                  <Button variant="outline" className="w-full justify-start">
+        <div className="hidden md:flex">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <Link href="#about" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Sobre mim
-                  </Button>
+                  </NavigationMenuLink>
                 </Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="/technologies">
-                  <Button variant="outline" className="w-full justify-start">
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="#technologies" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Tecnologias
-                  </Button>
+                  </NavigationMenuLink>
                 </Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="/projects">
-                  <Button variant="outline" className="w-full justify-start">
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="#projects" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Projetos
-                  </Button>
+                  </NavigationMenuLink>
                 </Link>
-              </SheetClose>
+              </NavigationMenuItem>
 
-              <SheetClose asChild>
-                <Link href="/contact">
-                  <Button variant="outline" className="w-full justify-start">
+              <NavigationMenuItem>
+                <Link href="#contact" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Contato
-                  </Button>
+                  </NavigationMenuLink>
                 </Link>
-              </SheetClose>
-            </div>
-          </SheetContent>
-        </Sheet>
-      </Card>
-    </header>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </div>
+    </Card>
   );
 };
 
