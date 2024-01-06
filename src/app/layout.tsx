@@ -5,7 +5,7 @@ import Header from "@/components/header";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -26,11 +26,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const fontSans = FontSans({
-    subsets: ["latin"],
-    variable: "--font-sans",
-  });
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
