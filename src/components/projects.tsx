@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-6">
+    <section className="m-auto flex max-w-5xl flex-col items-center justify-center gap-6">
       <h2 className=" text-2xl font-medium" id="projects">
         Projetos
       </h2>
