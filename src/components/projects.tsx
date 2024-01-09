@@ -102,7 +102,7 @@ const Projects = () => {
                 Acessar repositório
               </Link>
               <Link
-                href="https://fsw-store-pedrohenrique.vercel.app"
+                href="https://fsw-store-pedroeuzebio.vercel.app"
                 className="flex w-full items-center justify-center rounded bg-indigo-500 p-2 font-medium transition-colors hover:bg-indigo-500/50"
               >
                 Acessar projeto
