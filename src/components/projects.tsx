@@ -110,6 +110,53 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col gap-3 md:flex-row">
+          <Image
+            src="/apresentation-educafacilweb.png"
+            alt="educafacilweb"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="h-fit w-full md:max-w-xl"
+          />
+
+          <div className="flex flex-col gap-4">
+            <h3 className="text-center text-lg font-medium">EducaFacilWeb</h3>
+
+            <p className="text-justify text-muted-foreground">
+              Um site educacional que desenvolvi como projeto de conclusão de
+              curso para apoiar alunos em seus estudos. Desfrute de vídeos de
+              diferentes disciplinas e melhore seu desempenho acadêmico.
+            </p>
+
+            <p className="text-justify font-medium text-muted-foreground">
+              Este projeto foi desenvolvido com as seguintes tecnologias:
+            </p>
+
+            <ul className="list-inside list-disc text-muted-foreground md:flex md:list-outside md:list-none md:flex-wrap md:gap-2">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>Shadcn/UI</li>
+            </ul>
+
+            <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
+              <Link
+                href="https://github.com/pedroeuzebioo/educafacilweb"
+                className="flex w-full items-center justify-center rounded bg-indigo-500 p-2 font-medium transition-colors hover:bg-indigo-500/50"
+              >
+                Acessar repositório
+              </Link>
+              <Link
+                href="https://educafacilweb.vercel.app"
+                className="flex w-full items-center justify-center rounded bg-indigo-500 p-2 font-medium transition-colors hover:bg-indigo-500/50"
+              >
+                Acessar projeto
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
