@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Introduction = () => {
   return (
-    <section className="flex min-h-[90vh] flex-col items-center justify-start gap-4 md:flex-row md:items-start md:justify-between">
+    <section className="appear flex min-h-[90vh] flex-col items-center justify-start gap-4 md:flex-row md:items-start md:justify-between">
       <div className="text-center md:text-left">
         <h1 className="text-2xl font-medium">Olá, eu sou o</h1>
         <span className="text-2xl font-semibold text-indigo-500">
