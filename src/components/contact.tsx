@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col items-center gap-6">
+    <section className="mb-[6.25rem] flex flex-col items-center gap-4">
       <h2 className="text-2xl font-medium" id="contact">
         Contato
       </h2>
@@ -21,7 +21,7 @@ const Contact = () => {
         </Link>
 
         <Link
-          href="https://linkedin.com/in/pedro-henrique-lp142830"
+          href="https://linkedin.com/in/pedroeuzebio"
           className="flex flex-col items-center justify-center gap-3"
         >
           <div className="rounded-full bg-accent p-4">
@@ -32,7 +32,7 @@ const Contact = () => {
         </Link>
 
         <Link
-          href="mailto:pedroeuzebiodev@gmail.com"
+          href="mailto:pedroeuzebio.contato@gmail.com"
           className="flex flex-col items-center justify-center gap-3"
         >
           <div className="rounded-full bg-accent p-4">
