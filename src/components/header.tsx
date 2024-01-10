@@ -14,10 +14,8 @@ const Header = () => {
   return (
     <Card className="w-full">
       <div className="m-auto flex max-w-screen-xl items-center justify-center p-[1.875rem] md:justify-between">
-        <Link href="#home">
-          <h1 className="text-3xl font-semibold" id="home">
-            Pedro Euzebio
-          </h1>
+        <Link href="/">
+          <h1 className="text-3xl font-semibold">Pedro Euzebio</h1>
         </Link>
 
         <div className="hidden md:flex">
