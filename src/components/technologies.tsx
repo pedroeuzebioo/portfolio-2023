@@ -17,7 +17,7 @@ const Technologies = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-6">
+    <section className="mb-[6.25rem] flex flex-col items-center gap-4">
       <h2 className="text-2xl font-medium" id="technologies">
         Tecnologias
       </h2>
