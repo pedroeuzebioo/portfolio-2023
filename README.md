@@ -1,8 +1,8 @@
 # Portfólio
 
-<img src="./.github/apresentation.png" alt="Imagem de apresentação" width="100%">
+<img src="./.github/preview.png" alt="Imagem de apresentação" width="100%">
 
-> Sou Pedro Henrique, um entusiasta desenvolvedor web. Explore meu portfólio para ver um pouco sobre mim, minhas tecnologias, meus projetos e habilidades.
+> Sou Pedro Henrique, um desenvolvedor web. Explore meu portfólio para ver um pouco sobre mim, minhas tecnologias, meus projetos e como entrar em contato.
 
 ## 🔧 Tecnologias utilizadas
 
@@ -16,10 +16,10 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/eupedrohenrique">
-        <img src="https://github.com/eupedrohenrique.png" width="100px;" alt="Foto do Pedro Henrique"/><br>
+      <a href="https://github.com/pedroeuzebioo">
+        <img src="https://github.com/pedroeuzebioo.png" width="100px;" alt="Foto do Pedro Euzebio"/><br>
         <sub>
-          <b>Pedro Henrique</b>
+          <b>Pedro Euzebio</b>
         </sub>
       </a>
     </td>
