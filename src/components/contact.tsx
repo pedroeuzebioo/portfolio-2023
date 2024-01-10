@@ -1,9 +1,24 @@
+"use client";
+
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 const Contact = () => {
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
-    <section className="mb-[6.25rem] flex flex-col items-center gap-4">
+    <section
+      className="flex flex-col items-center gap-4"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 className="text-2xl font-medium" id="contact">
         Contato
       </h2>
