@@ -1,6 +1,16 @@
+"use client";
+
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Image from "next/image";
 
 const Technologies = () => {
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   const technologies = [
     { name: "HTML", icon: "/html5-original.svg" },
     { name: "CSS", icon: "/css3-original.svg" },
@@ -17,7 +27,12 @@ const Technologies = () => {
   ];
 
   return (
-    <section className="mb-[6.25rem] flex flex-col items-center gap-4">
+    <section
+      className="mb-[6.25rem] flex flex-col items-center gap-4"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 className="text-2xl font-medium" id="technologies">
         Tecnologias
       </h2>
