@@ -1,65 +1,29 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import Introduction from "@/components/introduction";
 import Projects from "@/components/projects";
 import Technologies from "@/components/technologies";
-import Image from "next/image";
-import Link from "next/link";
-
-const Introduction = () => {
-  return (
-    <div className="text-center md:text-left">
-      <h1 className="text-2xl font-medium">Olá, eu sou o</h1>
-      <span className="text-2xl font-semibold text-indigo-500">
-        Pedro Euzebio
-      </span>
-      <p className="font-medium text-muted-foreground">
-        Seja bem-vindo ao meu portfólio
-      </p>
-      <ContactLinks />
-    </div>
-  );
-};
-
-const ContactLinks = () => {
-  return (
-    <div className="mt-4 flex flex-wrap justify-center gap-3 md:justify-start">
-      <a
-        href="/curriculo.pdf"
-        download
-        className="flex w-full max-w-[18.75rem] items-center justify-center rounded-full bg-indigo-500 p-2 font-medium"
-      >
-        Download CV
-      </a>
-      <Link
-        href="mailto:eupedrohenrique.euzebio@gmail.com"
-        className="flex w-full max-w-[18.75rem] items-center justify-center rounded-full border-2 border-indigo-500 bg-background px-1 py-2 font-medium transition-all hover:bg-indigo-500"
-      >
-        Entrar em contato
-      </Link>
-    </div>
-  );
-};
 
 export default function Home() {
   return (
-    <main className="m-auto flex w-full max-w-7xl flex-col gap-12 p-[1.875rem]">
-      <section className="flex flex-1 flex-col items-center justify-center gap-4 md:min-h-[50vh] md:flex-row md:items-start md:justify-between">
+    <>
+      <Header />
+
+      <main className="m-auto flex w-full max-w-7xl flex-col p-[1.875rem]">
         <Introduction />
-        <Image
-          src="/avatar.png"
-          alt="Foto do Pedro Henrique"
-          width={200}
-          height={200}
-        />
-      </section>
 
-      <About />
+        <About />
 
-      <Technologies />
+        <Technologies />
 
-      <Projects />
+        <Projects />
 
-      <Contact />
-    </main>
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
   );
 }
