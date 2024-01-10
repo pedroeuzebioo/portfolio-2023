@@ -1,6 +1,22 @@
+"use client";
+
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const About = () => {
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
-    <section className="m-auto mb-[6.25rem] flex max-w-5xl flex-col items-center gap-4">
+    <section
+      className="m-auto mb-[9.375rem] flex max-w-5xl flex-col items-center gap-4"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 className="text-2xl font-medium" id="about">
         Sobre mim
       </h2>
