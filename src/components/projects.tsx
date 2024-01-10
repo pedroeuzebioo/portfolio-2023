@@ -3,18 +3,18 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section className="m-auto flex max-w-5xl flex-col items-center justify-center gap-6">
+    <section className="m-auto mb-[6.25rem] flex max-w-5xl flex-col items-center justify-center gap-4">
       <h2 className=" text-2xl font-medium" id="projects">
         Projetos
       </h2>
 
       <h3 className="text-lg font-medium">Destaques</h3>
 
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col gap-4 md:flex-row">
           <Image
             src="/apresentation-speedyhamburguer.png"
-            alt="speedyhamburguer"
+            alt="Foto do projeto Speedy Hamburguer"
             width={0}
             height={0}
             sizes={"100vw"}
@@ -60,10 +60,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 md:flex-row">
+        <div className="flex flex-col gap-4 md:flex-row">
           <Image
             src="/apresentation-fsw-store.png"
-            alt="fsw-store"
+            alt="Foto do projeto FSW Store"
             width={0}
             height={0}
             sizes="100vw"
@@ -111,10 +111,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 md:flex-row">
+        <div className="flex flex-col gap-4 md:flex-row">
           <Image
             src="/apresentation-educafacilweb.png"
-            alt="educafacilweb"
+            alt="Foto do projeto EducaFacilWeb"
             width={0}
             height={0}
             sizes="100vw"
