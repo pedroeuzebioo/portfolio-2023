@@ -1,31 +1,27 @@
+import { Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Introduction = () => {
   return (
-    <section className="appear flex min-h-[90vh] flex-col items-center justify-start gap-4 md:flex-row md:items-start md:justify-between">
+    <section className="appear mb-[9.375rem] flex flex-col items-center justify-start gap-4 md:flex-row md:items-start md:justify-between">
       <div className="text-center md:text-left">
         <h1 className="text-2xl font-medium">Olá, eu sou o</h1>
         <span className="text-2xl font-semibold text-indigo-500">
           Pedro Euzebio
         </span>
         <p className="font-medium text-muted-foreground">
-          Seja bem-vindo ao meu portfólio
+          Desenvolvedor Fullstack
         </p>
-        <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
+        <div className="mt-4 flex justify-center gap-2 md:justify-start w-[12.5rem]">
           <a
             href="/curriculo.pdf"
             download
-            className="flex w-full max-w-[18.75rem] items-center justify-center rounded-full bg-indigo-500 p-2 font-medium"
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-indigo-500 p-2 font-medium hover:bg-indigo-500/50"
           >
+            <Download size={16} />
             Download CV
           </a>
-          <Link
-            href="mailto:pedroeuzebio.contato@gmail.com"
-            className="flex w-full max-w-[18.75rem] items-center justify-center rounded-full border-2 border-indigo-500 bg-background p-2 font-medium transition-all hover:bg-indigo-500"
-          >
-            Entrar em contato
-          </Link>
         </div>
       </div>
 
