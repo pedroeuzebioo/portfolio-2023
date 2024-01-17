@@ -13,9 +13,9 @@ interface CustomMetadata extends Metadata {
 }
 
 export const metadata: CustomMetadata = {
-  title: "Pedro Euzebio | Desenvolvedor Web",
+  title: "Pedro Euzebio | Desenvolvedor Fullstack",
   description:
-    "Sou Pedro Euzebio, um desenvolvedor web. Explore meu portfólio para ver um pouco sobre mim, minhas tecnologias, meus projetos e entrar em contato.",
+    "Sou Pedro Euzebio, um desenvolvedor fullstack. Explore meu portfólio para ver um pouco sobre mim, minhas tecnologias, meus projetos em destaques e entrar em contato.",
   author: "Pedro Euzebio",
 };
 
@@ -26,6 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

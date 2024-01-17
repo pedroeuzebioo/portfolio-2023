@@ -42,21 +42,21 @@ const Projects = () => {
             </h3>
 
             <p className="text-justify text-muted-foreground">
-              Uma lanchonete virtual com pedidos realizados pelo whatsapp, os
-              clientes podem checar o cardápio online, escolher o produto,
-              adicionar ao carrinho e enviar os pedidos pelo whatsapp.
+              projeto colaborativo com colegas de curso desenvolvido para a
+              feira de ciências escolar, redefine lanchonetes virtuais. Explore
+              o cardápio, escolha itens e envie pedidos via WhatsApp, combinando
+              praticidade e simplicidade.
             </p>
 
-            <p className="text-justify font-medium text-muted-foreground">
+            <p className="text-justify text-muted-foreground">
               Este projeto foi desenvolvido com as seguintes tecnologias:
             </p>
 
-            <ul className="list-inside list-disc text-muted-foreground md:flex md:list-outside md:list-none md:gap-2">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>API do WhatsApp</li>
-            </ul>
+            <div className="flex max-w-3xl flex-wrap items-center justify-center gap-4">
+              <i className="devicon-html5-plain text-[2rem] text-indigo-500"></i>
+              <i className="devicon-css3-plain text-[2rem] text-indigo-500"></i>
+              <i className="devicon-javascript-plain text-[2rem] text-indigo-500"></i>
+            </div>
 
             <div className="flex flex-wrap justify-center gap-2 md:justify-start">
               <Link
@@ -89,25 +89,23 @@ const Projects = () => {
             <h3 className="text-center text-lg font-medium">FSW Store</h3>
 
             <p className="text-justify text-muted-foreground">
-              Sistema de e-commerce usando a Stripe como forma de pagamento e
-              utilizando as tecnologias mais modernas e demandadas pelo mercado.
+              Sistema web com autenticação via Google e Stripe como método de
+              pagamento. Desenvolvido com as tecnologias mais modernas e
+              requisitadas pelo mercado para uma experiência de e-commerce
+              excepcional.
             </p>
 
-            <p className="text-justify font-medium text-muted-foreground">
+            <p className="text-justify text-muted-foreground">
               Este projeto foi desenvolvido com as seguintes tecnologias:
             </p>
 
-            <ul className="list-inside list-disc text-muted-foreground md:flex md:list-outside md:list-none md:flex-wrap md:gap-2">
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Tailwind</li>
-              <li>Shadcn/UI</li>
-              <li>Node.js</li>
-              <li>Prisma</li>
-              <li>Next Auth</li>
-              <li>PostgreSQL</li>
-              <li>Stripe</li>
-            </ul>
+            <div className="flex max-w-3xl flex-wrap items-center justify-center gap-4">
+              <i className="devicon-react-original text-[2rem] text-indigo-500"></i>
+              <i className="devicon-nextjs-original text-[2rem] text-indigo-500"></i>
+              <i className="devicon-tailwindcss-plain text-[2rem] text-indigo-500"></i>
+              <i className="devicon-nodejs-plain text-[2rem] text-indigo-500"></i>
+              <i className="devicon-postgresql-plain text-[2rem] text-indigo-500"></i>
+            </div>
 
             <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
               <Link
@@ -140,21 +138,21 @@ const Projects = () => {
             <h3 className="text-center text-lg font-medium">EducaFacilWeb</h3>
 
             <p className="text-justify text-muted-foreground">
-              Um site educacional que desenvolvi como projeto de conclusão de
-              curso para apoiar alunos em seus estudos. Desfrute de vídeos de
-              diferentes disciplinas e melhore seu desempenho acadêmico.
+              Concluí meu curso técnico em informática com um site educacional
+              dedicado a auxiliar alunos em seus estudos. A plataforma oferece
+              vídeos em diversas disciplinas, promovendo o aprimoramento
+              acadêmico de forma acessível e interativa.
             </p>
 
-            <p className="text-justify font-medium text-muted-foreground">
+            <p className="text-justify text-muted-foreground">
               Este projeto foi desenvolvido com as seguintes tecnologias:
             </p>
 
-            <ul className="list-inside list-disc text-muted-foreground md:flex md:list-outside md:list-none md:flex-wrap md:gap-2">
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Tailwind</li>
-              <li>Shadcn/UI</li>
-            </ul>
+            <div className="flex max-w-3xl flex-wrap items-center justify-center gap-4">
+              <i className="devicon-react-original text-[2rem] text-indigo-500"></i>
+              <i className="devicon-nextjs-original text-[2rem] text-indigo-500"></i>
+              <i className="devicon-tailwindcss-plain text-[2rem] text-indigo-500"></i>
+            </div>
 
             <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
               <Link
