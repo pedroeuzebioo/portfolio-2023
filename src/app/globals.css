@@ -52,7 +52,7 @@
 }
 
 .appear {
-  animation: appear 2s ease-in-out;
+  animation: appear 1500ms ease-in-out;
 }
 
 @keyframes appear {
@@ -65,4 +65,8 @@
     opacity: 1;
     translate: 0 0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
