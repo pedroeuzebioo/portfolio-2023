@@ -22,12 +22,13 @@ const About = () => {
       </h2>
 
       <p className="text-justify text-muted-foreground">
-        Desenvolvedor web e graduado como técnico em informática. Especializado
-        em React, Next.js, Tailwind CSS e Prisma para desenvolvimento fullstack.
-        Experiência sólida no IFCE Campus Baturité, atuando em projetos
-        notáveis. Atuei como Técnico de TI no FMAS de Baturité, continuo
-        aprimorando minhas habilidades e compartilhando conhecimento. Busco
-        oportunidades em projetos inovadores e colaborativos.
+        Sou formado em Informática pela EEEP, com expertise em React, Next.js,
+        Tailwind CSS, Node.js e SQL, utilizando Prisma para desenvolvimento
+        fullstack. Experiência consolidada no IFCE Campus Baturité, atuando como
+        desenvolvedor e solucionador de problemas. Anteriormente, fui Técnico de
+        TI no FMAS de Baturité. Estou constantemente aprimorando minhas
+        habilidades e compartilhando conhecimento. Busco oportunidades em
+        projetos colaborativos.
       </p>
     </section>
   );
