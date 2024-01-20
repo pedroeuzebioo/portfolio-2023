@@ -14,19 +14,20 @@ const Contact = () => {
 
   return (
     <section
-      className="flex flex-col items-center gap-4"
+      className="py-[6.25rem]"
       data-aos="fade-right"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
+      id="contact"
     >
-      <h2 className="text-2xl font-medium" id="contact">
+      <h2 className="py-[1.875rem] text-center text-2xl font-medium">
         Contato
       </h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-6">
+      <div className="flex items-center justify-center gap-[1.875rem]">
         <Link
           href="https://github.com/pedroeuzebioo"
-          className="flex flex-col items-center justify-center gap-3"
+          className="flex flex-col items-center justify-center gap-2"
         >
           <div className="rounded-full bg-accent p-4">
             <Github size={16} />
@@ -37,7 +38,7 @@ const Contact = () => {
 
         <Link
           href="https://linkedin.com/in/pedroeuzebio"
-          className="flex flex-col items-center justify-center gap-3"
+          className="flex flex-col items-center justify-center gap-2"
         >
           <div className="rounded-full bg-accent p-4">
             <Linkedin size={16} />
@@ -48,7 +49,7 @@ const Contact = () => {
 
         <Link
           href="mailto:pedroeuzebio.contato@gmail.com"
-          className="flex flex-col items-center justify-center gap-3"
+          className="flex flex-col items-center justify-center gap-2"
         >
           <div className="rounded-full bg-accent p-4">
             <Mail size={16} />
@@ -59,7 +60,7 @@ const Contact = () => {
 
         <Link
           href="tel:+5585996378165"
-          className="flex flex-col items-center justify-center gap-3"
+          className="flex flex-col items-center justify-center gap-2"
         >
           <div className="rounded-full bg-accent p-4">
             <Phone size={16} />
