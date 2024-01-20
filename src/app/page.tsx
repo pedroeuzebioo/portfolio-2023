@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-
+      
       <main className="m-auto flex w-full max-w-7xl flex-col p-[1.875rem]">
         <Introduction />
 
