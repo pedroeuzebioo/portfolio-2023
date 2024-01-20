@@ -28,12 +28,13 @@ const Technologies = () => {
 
   return (
     <section
-      className="mb-[6.25rem] flex flex-col items-center gap-4"
+      className="m-auto py-[6.25rem]"
       data-aos="fade-right"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
+      id="technologies"
     >
-      <h2 className="text-2xl font-medium" id="technologies">
+      <h2 className="py-[0.9375rem] text-center text-2xl font-medium">
         Tecnologias
       </h2>
 
@@ -41,7 +42,7 @@ const Technologies = () => {
         {technologies.map((tech) => (
           <div
             key={tech.name}
-            className="border-text flex h-28 w-28 flex-col items-center justify-center rounded-full bg-accent p-6"
+            className="flex h-[6.25rem] w-[6.25rem] flex-col items-center justify-center gap-1 rounded-full bg-accent p-[1.875rem]"
           >
             <p className="text-sm">{tech.name}</p>
             <Image
@@ -50,7 +51,7 @@ const Technologies = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="m-auto h-8 w-8 object-contain"
+              className="m-auto h-[1.875rem] w-[1.875rem] object-contain"
             />
           </div>
         ))}
