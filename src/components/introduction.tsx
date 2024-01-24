@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Introduction = () => {
   return (
-    <section className="appear py-[6.25rem] flex flex-col items-center gap-4 md:flex-row md:items-start md:justify-between">
+    <section className="appear flex flex-col items-center gap-4 py-[6.25rem] md:flex-row md:items-start md:justify-between">
       <div className="text-center md:text-left">
         <h1 className="text-2xl font-medium">Olá, eu sou o</h1>
         <span className="text-2xl font-semibold text-indigo-500">
