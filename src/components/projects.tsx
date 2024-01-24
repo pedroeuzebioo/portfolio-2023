@@ -169,10 +169,11 @@ const Projects = () => {
             <h3 className="text-center text-lg font-medium">EducaFacilWeb</h3>
 
             <p className="text-justify text-muted-foreground">
-              Concluí meu curso técnico em informática com um site educacional
-              dedicado a auxiliar alunos em seus estudos. A plataforma oferece
-              vídeos em diversas disciplinas, promovendo o aprimoramento
-              acadêmico de forma acessível e interativa.
+              Projeto social e de conclusão de curso técnico em informática.
+              Desenvolvi um site educacional dedicado a auxiliar alunos em seus
+              estudos. A plataforma oferece vídeos em diversas disciplinas,
+              promovendo o aprimoramento acadêmico de forma acessível e
+              interativa.
             </p>
 
             <p className="text-justify text-muted-foreground">
