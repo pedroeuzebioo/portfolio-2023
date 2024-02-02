@@ -11,7 +11,7 @@ const Introduction = () => {
           Pedro Euzebio
         </span>
         <p className="font-medium text-muted-foreground">
-          Desenvolvedor Fullstack
+          Desenvolvedor Web
         </p>
         <a
           href="/curriculo.pdf"
